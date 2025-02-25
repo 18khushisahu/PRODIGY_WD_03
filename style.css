@@ -1,0 +1,64 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+/* Game container */
+.container {
+    text-align: center;
+}
+
+/* Tic-Tac-Toe board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin: 20px 0;
+}
+
+/* Game cells */
+.cell {
+    width: 100px;
+    height: 100px;
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cell:hover {
+    background: #d1c4e9;
+}
+
+/* Reset button */
+#resetBtn {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 20px;
+    background: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resetBtn:hover {
+    background: #f50057;
+}
+
+/* Status message */
+#status {
+    font-size: 1.5em;
+}
